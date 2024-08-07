@@ -1,8 +1,8 @@
 {
     "chain_name": "og",
     "coingecko": "",
-    "api": ["https://og-testnet-api.itrocket.net"], 
-    "rpc": ["https://og-testnet-rpc.itrocket.net"],
+    "api": ["https://0g-testnet-api.hazennetworksolutions.com"], 
+    "rpc": ["https://0g-testnet-rpc.hazennetworksolutions.com"],
     "snapshot_provider": "",
     "sdk_version": "0.46.11",
     "coin_type": "60",
