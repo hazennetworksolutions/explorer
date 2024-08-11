@@ -1,0 +1,19 @@
+{
+  "chain_name": "titan-testnet",
+  "api": ["https://titan-testnet-api.hazennetworksolutions.com","https://lcd.titannet.io"],
+  "rpc": ["https://titan-testnet-rpc.hazennetworksolutions.com","https://rpc.titannet.io"],
+  "coin_type": 118,
+  "min_tx_fee": 500,
+  "sdk_version": "0.45.11",
+  "addr_prefix": "titan",
+  "logo": "https://github.com/molla202/CoreNode-explorer/blob/main/logos/titannet.png?raw=true",
+  "theme_color": "#588924",
+  "assets": [
+    {
+      "base": "uttnt",
+      "symbol": "TTNT",
+      "exponent": 6,
+      "logo": "https://github.com/molla202/CoreNode-explorer/blob/main/logos/titannet.png?raw=true"
+    }
+  ]
+}
