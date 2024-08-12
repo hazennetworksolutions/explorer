@@ -1,0 +1,19 @@
+{
+    "chain_name": "hedge-testnet",
+    "api": ["https://hedge-testnet-api.hazennetworksolutions.com"],
+    "rpc": ["https://hedge-testnet-rpc.hazennetworksolutions.com/"],
+    "coin_type": 118,
+    "min_tx_fee": 250,
+    "sdk_version": "0.45.11",
+    "addr_prefix": "hedge",
+    "logo": "https://github.com/molla202/CoreNode-explorer/blob/main/logos/hedge.jpg?raw=true",
+    "theme_color": "#5C743B",
+    "assets": [
+      {
+        "base": "uhedge",
+        "symbol": "HEDGE",
+        "exponent": 6,
+        "logo": "https://github.com/molla202/CoreNode-explorer/blob/main/logos/hedge.jpg?raw=true"
+      }
+    ]
+  }
