@@ -1,8 +1,8 @@
 {
     "chain_name": "fiamma",
     "coingecko": "",
-    "api": ["https://https://fiamma-testnet-api.hazennetworksolutions.com"],
-    "rpc": ["https://https://fiamma-testnet-rpc.hazennetworksolutions.com"],
+    "api": ["https://fiamma-testnet-api.hazennetworksolutions.com"],
+    "rpc": ["https://fiamma-testnet-rpc.hazennetworksolutions.com"],
     "snapshot_provider": "",
     "sdk_version": "0.50.6",
     "coin_type": "118",
