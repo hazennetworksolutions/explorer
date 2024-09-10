@@ -1,7 +1,7 @@
 {
   "chain_name": "titan-testnet",
-  "api": ["https://titan-testnet-api.hazennetworksolutions.com","https://lcd.titannet.io"],
-  "rpc": ["https://titan-testnet-rpc.hazennetworksolutions.com","https://rpc.titannet.io"],
+  "api": ["https://titan-testnet-api.hazennetworksolutions.com"],
+  "rpc": ["https://titan-testnet-rpc.hazennetworksolutions.com"],
   "coin_type": 118,
   "min_tx_fee": 500,
   "sdk_version": "0.45.11",
