@@ -1,8 +1,8 @@
 {
     "chain_name": "prysm",
     "coingecko": "",
-    "api": ["prysm-testnet-api.hazennetworksolutions.com"],
-    "rpc": ["prysm-testnet-rpc.hazennetworksolutions.com"],
+    "api": ["https://prysm-testnet-api.hazennetworksolutions.com"],
+    "rpc": ["https://prysm-testnet-rpc.hazennetworksolutions.com"],
     "snapshot_provider": "",
     "sdk_version": "0.46.0",
     "coin_type": "60",
