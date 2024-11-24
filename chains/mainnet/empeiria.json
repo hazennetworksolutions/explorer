@@ -1,7 +1,7 @@
 {
     "chain_name": "empeiria",
-    "api": ["https://empeiria-testnet-api.itrocket.net"],
-    "rpc": ["https://empeiria-testnet-rpc.itrocket.net"],
+    "api": ["https://empeiria-testnet-api.hazennetworksolutions.com/"],
+    "rpc": ["https://empeiria-testnet-rpc.hazennetworksolutions.com/"],
 	"sdk_version": "v0.47.9",
     "coin_type": 118,
     "min_tx_fee": 200,
