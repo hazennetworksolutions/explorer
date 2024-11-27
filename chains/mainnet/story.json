@@ -3,7 +3,7 @@
     "api": ["https://story-testnet-api.hazennetworksolutions.com/"],
     "rpc": ["https://story-testnet-rpc.hazennetworksolutions.com/"],
 	"sdk_version": "v0.47.4",
-    "coin_type": 118,
+    "coin_type": 60,
     "min_tx_fee": 200,
     "addr_prefix": "story",
     "logo": "/logos/empeiria.jpg",
