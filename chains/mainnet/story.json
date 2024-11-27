@@ -2,7 +2,7 @@
     "chain_name": "story",
     "api": ["https://story-testnet-api.hazennetworksolutions.com/"],
     "rpc": ["https://story-testnet-rpc.hazennetworksolutions.com/"],
-	"sdk_version": "v0.1.0-alpha",
+	"sdk_version": "1.2.0-rc.2",
     "coin_type": 118,
     "min_tx_fee": 200,
     "addr_prefix": "story",
