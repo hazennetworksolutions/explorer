@@ -5,7 +5,7 @@
 	"sdk_version": "v0.47.9",
     "coin_type": 118,
     "min_tx_fee": 200,
-    "addr_prefix": "source",
+    "addr_prefix": "story",
     "logo": "/logos/empeiria.jpg",
     "assets": [{
         "base": "uip",
