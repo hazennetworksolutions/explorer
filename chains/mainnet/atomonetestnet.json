@@ -1,5 +1,5 @@
 {
-    "chain_name": "atomone",
+    "chain_name": "atomone-testnet",
     "coingecko": "",
     "api": ["https://atomone-testnet-api.hazennetworksolutions.com/"],
     "rpc": ["https://atomone-testnet-rpc.hazennetworksolutions.com/"],
