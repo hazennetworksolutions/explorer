@@ -1,0 +1,16 @@
+{
+    "chain_name": "Odiseo",
+    "api": ["https://odiseo-testnet-api.hazennetworksolutions.com/"],
+    "rpc": ["https://odiseo-testnet-rpc.hazennetworksolutions.com/"],
+    "sdk_version": "v0.50.8",
+    "coin_type": "118",
+    "min_tx_fee": "500",
+    "addr_prefix": "odiseo",
+    "logo": "https://testnet.explorer.nodeshub.online/logos/odiseo.png",
+    "assets": [{
+        "base": "uodis",
+        "symbol": "ODIS",
+        "exponent": "6",
+        "logo": "/logos/odiseo.png"
+    }]
+}

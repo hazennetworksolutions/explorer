@@ -1,0 +1,22 @@
+{
+  "chain_name": "kiichain",
+  "coingecko": "unknown",
+  "api": ["https://kiichain-testnet-api.hazennetworksolutions.com/"],
+  "rpc": ["https://https://kiichain-testnet-rpc.hazennetworksolutions.com/"],
+  "snapshot_provider": "",
+  "sdk_version": "0.47.4",
+  "coin_type": "118",
+  "min_tx_fee": "25000",
+  "addr_prefix": "ukii",
+  "logo": "https://miro.medium.com/v2/resize:fill:96:96/1*FyiIOQsiwRo79erYzTG5DQ.png",
+  "theme_color": "#f3b000",
+  "assets": [
+    {
+      "base": "ukii",
+      "symbol": "KII",
+      "exponent": "6",
+      "coingecko_id": "unknown",
+      "logo": "/logos/kiichain.png"
+    }
+  ]
+}
