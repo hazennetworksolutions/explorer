@@ -288,7 +288,7 @@ function selected(route: any, nav: NavLink) {
           {{ $t('module.links') }}
         </div>
         <a
-          href="https://twitter.com/itrocket_team"
+          href="https://x.com/haznftofficial"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
