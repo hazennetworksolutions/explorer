@@ -1,5 +1,5 @@
 {
-  "chain_name": "lumera-testnet",
+  "chain_name": "lumera",
   "api": ["https://lumera-testnet-api.hazennetworksolutions.com/"],
   "rpc": ["https://lumera-testnet-rpc.hazennetworksolutions.com/"],
   "sdk_version": "v0.50.13",
