@@ -1,0 +1,18 @@
+{
+  "chain_name": "Tac-Testnet",
+  "api": ["https://tacchain-testnet-api.hazennetworksolutions.com"],
+  "rpc": ["https://tacchain-testnet-rpc.hazennetworksolutions.com"],
+  "snapshot_provider": "",
+  "sdk_version": "",
+  "coin_type": "118",
+  "min_tx_fee": "200",
+  "addr_prefix": "tac",
+  "logo": "https://raw.githubusercontent.com/molla202/CoreNode-explorer/main/logos/tac.png",
+  "assets": [{
+    "base": "utac",
+    "symbol": "TAC",
+    "exponent": "18",
+    "coingecko_id": "",
+    "logo": "https://raw.githubusercontent.com/molla202/CoreNode-explorer/main/logos/tac.png"
+  }]
+}
