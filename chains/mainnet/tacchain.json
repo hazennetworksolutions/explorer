@@ -1,5 +1,5 @@
 {
-  "chain_name": "Tac-Testnet",
+  "chain_name": "Tacchain",
   "api": ["https://tacchain-testnet-api.hazennetworksolutions.com"],
   "rpc": ["https://tacchain-testnet-rpc.hazennetworksolutions.com"],
   "snapshot_provider": "",
