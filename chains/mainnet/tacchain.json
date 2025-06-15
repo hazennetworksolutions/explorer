@@ -7,12 +7,12 @@
   "coin_type": "118",
   "min_tx_fee": "200",
   "addr_prefix": "tac",
-  "logo": "https://raw.githubusercontent.com/molla202/CoreNode-explorer/main/logos/tac.png",
+  "logo": "/logos/tacchain.png",
   "assets": [{
     "base": "utac",
     "symbol": "TAC",
     "exponent": "18",
     "coingecko_id": "",
-    "logo": "https://raw.githubusercontent.com/molla202/CoreNode-explorer/main/logos/tac.png"
+    "logo": "/logos/tacchain.png"
   }]
 }
