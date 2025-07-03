@@ -1,0 +1,19 @@
+ {
+    "chain_name": "Symphony-Testnet",
+    "api": ["https://symphony-mainnet-api.hazennetworksolutions.com"],
+    "rpc": ["https://symphony-mainnet-rpc.hazennetworksolutions.com"],
+    "coin_type": 118,
+    "min_tx_fee": 800,
+    "sdk_version": "0.47.8",
+    "addr_prefix": "symphony",
+    "logo": "https://github.com/ping-pub/ping.pub/blob/main/logos/symphony.png?raw=true",
+    "theme_color": "#56aaff",
+    "assets": [
+      {
+        "base": "note",
+        "symbol": "MLD",
+        "exponent": 6,
+        "logo": "https://github.com/ping-pub/ping.pub/blob/main/logos/symphony.png?raw=true"
+      }
+    ]
+  }
