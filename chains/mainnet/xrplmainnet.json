@@ -1,8 +1,8 @@
 {
-    "chain_name": "xrplevm-testnet",
+    "chain_name": "xrplevm-mainnet",
     "coingecko": "",
-    "api": ["https://xrpl-testnet-api.hazennetworksolutions.com/"], 
-    "rpc": ["https://xrpl-testnet-rpc.hazennetworksolutions.com/"],
+    "api": ["https://xrpl-mainnet-api.hazennetworksolutions.com/"], 
+    "rpc": ["https://xrpl-mainnet-rpc.hazennetworksolutions.com/"],
     "snapshot_provider": "",
     "sdk_version": "v0.50.11-evmos",
     "coin_type": "60",
