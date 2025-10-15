@@ -1,0 +1,18 @@
+{
+    "chain_name": "Safrochain",
+    "api": ["https://safrochain-testnet-api.hazennetworksolutions.com/"],
+    "rpc": ["https://safrochain-testnet-rpc.hazennetworksolutions.com/"],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "1000",
+    "addr_prefix": "saf",
+    "logo": "https://raw.githubusercontent.com/coinsspor/coinsspor/refs/heads/main/safrologo.png",
+    "theme_color": "#4B7BEC",
+    "assets": [{
+        "base": "usaf",
+      "symbol": "SAF",
+      "exponent": 6,
+      "logo": "https://raw.githubusercontent.com/coinsspor/coinsspor/refs/heads/main/safrologo.png"
+    }]
+}
