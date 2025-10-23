@@ -6,7 +6,7 @@
   "min_tx_fee": 200,
   "sdk_version": "0.50.9",
   "addr_prefix": "tellor",
-  "logo": "/logos/tellor.png",
+  "logo": "/logos/tellor-testnet.png",
   "assets": [
     {
       "base": "loya",
