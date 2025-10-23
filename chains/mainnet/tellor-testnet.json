@@ -1,5 +1,5 @@
 {
-  "chain_name": "tellor",
+  "chain_name": "tellor-testnet",
   "api": ["https://tellor-testnet-api.hazennetworksolutions.com/"],
   "rpc": ["https://tellor-testnet-rpc.hazennetworksolutions.com/"],
   "coin_type": 118,
