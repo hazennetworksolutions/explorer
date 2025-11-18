@@ -1,4 +1,3 @@
-
 import type { Key, PaginatedResponse } from "./common";
 
 export interface AuthAccount {

@@ -73,14 +73,14 @@ function selected(route: any, nav: NavLink) {
       class="w-64 fixed z-50 left-0 top-0 bottom-0 overflow-auto bg-base-100 border-r border-gray-100 dark:border-gray-700"
       :class="{ block: sidebarShow, 'hidden xl:!block': !sidebarShow }"
     >
-      <div class="flex justify-between mt-1 pl-4 py-4 mb-1">
+      <div class="flex justify-between p-6">
         <RouterLink to="/" class="flex items-center">
-          <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white">
+          <h1 class="flex-1 ml-3 text-xl font-semibold dark:text-white leading-tight">
             Hazen Network Solutions
           </h1>
         </RouterLink>
         <div
-          class="pr-4 cursor-pointer xl:!hidden"
+          class="cursor-pointer xl:!hidden"
           @click="sidebarShow = false"
         >
           <Icon icon="mdi-close" class="text-2xl" />
@@ -89,7 +89,7 @@ function selected(route: any, nav: NavLink) {
       <div
         v-for="(item, index) of blockchain.computedChainMenu"
         :key="index"
-        class="px-2"
+        class="px-4"
       >
         <div
           v-if="isNavGroup(item)"
@@ -107,7 +107,7 @@ function selected(route: any, nav: NavLink) {
             @click="changeOpen(index)"
           />
           <div
-            class="collapse-title !py-0 px-4 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+            class="collapse-title !py-0 px-4 flex items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all duration-200"
           >
             <Icon
               v-if="item?.icon?.icon"
@@ -115,7 +115,7 @@ function selected(route: any, nav: NavLink) {
               class="text-xl mr-2"
               :class="{
                 'text-yellow-500': item?.title === 'Favorite',
-                'text-blue-500': item?.title !== 'Favorite',
+                'text-primary': item?.title !== 'Favorite',
               }"
             />
             <img
@@ -124,7 +124,7 @@ function selected(route: any, nav: NavLink) {
               class="w-6 h-6 rounded-full mr-3"
             />
             <div
-              class="text-base capitalize flex-1 text-gray-700 dark:text-gray-200 whitespace-nowrap"
+              class="text-base capitalize flex-1 text-gray-700 dark:text-gray-200 whitespace-nowrap leading-normal"
             >
               {{ item?.title }}
             </div>
@@ -144,7 +144,7 @@ function selected(route: any, nav: NavLink) {
               <RouterLink
                 v-if="isNavLink(el)"
                 @click="sidebarShow = false"
-                class="hover:bg-gray-100 dark:hover:bg-[#373f59] rounded cursor-pointer px-3 py-2 flex items-center"
+                class="hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg cursor-pointer px-3 py-2 flex items-center transition-all duration-200"
                 :class="{
                   '!bg-primary': selected($route, el),
                 }"
@@ -185,7 +185,7 @@ function selected(route: any, nav: NavLink) {
           v-if="isNavLink(item)"
           :to="item?.to"
           @click="sidebarShow = false"
-          class="cursor-pointer rounded-lg px-4 flex items-center py-2 hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="cursor-pointer rounded-lg px-4 flex items-center py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <Icon
             v-if="item?.icon?.icon"
@@ -193,7 +193,7 @@ function selected(route: any, nav: NavLink) {
             class="text-xl mr-2"
             :class="{
               'text-yellow-500': item?.title === 'Favorite',
-              'text-blue-500': item?.title !== 'Favorite',
+              'text-primary': item?.title !== 'Favorite',
             }"
           />
           <img
@@ -221,14 +221,14 @@ function selected(route: any, nav: NavLink) {
           {{ item?.heading }}
         </div>
       </div>
-      <div class="px-2">
+      <div class="px-4">
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
           {{ $t('module.sponsors') }}
         </div>
         <a
           href="https://osmosis.zone"
           target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <img
             src="https://ping.pub/logos/osmosis.jpg"
@@ -243,7 +243,7 @@ function selected(route: any, nav: NavLink) {
         <a
           href="https://celestia.org"
           target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <img
             src="https://ping.pub/logos/celestia.png"
@@ -258,7 +258,7 @@ function selected(route: any, nav: NavLink) {
         <a
           href="https://becole.com"
           target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <img
             src="https://becole.com/static/logo/logo_becole.png"
@@ -274,7 +274,7 @@ function selected(route: any, nav: NavLink) {
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Tools</div>
         <RouterLink
           to="/wallet/suggest"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
           <div
@@ -290,7 +290,7 @@ function selected(route: any, nav: NavLink) {
         <a
           href="https://x.com/haznftofficial"
           target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <Icon icon="mdi:twitter" class="text-xl mr-2" />
           <div
@@ -303,7 +303,7 @@ function selected(route: any, nav: NavLink) {
           v-if="showDiscord"
           href="https://discord.com/invite/CmjYVSr6GW"
           target="_blank"
-          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <Icon icon="mdi:discord" class="text-xl mr-2" />
           <div
@@ -315,7 +315,7 @@ function selected(route: any, nav: NavLink) {
         <a
           href="https://github.com/ping-pub/explorer/discussions"
           target="_blank"
-          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
         >
           <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
           <div
@@ -326,10 +326,10 @@ function selected(route: any, nav: NavLink) {
         </a>
       </div>
     </div>
-    <div class="xl:!ml-64 px-3 pt-4">
+    <div class="xl:!ml-64 px-6 pt-6">
       <!-- header -->
       <div
-        class="flex items-center py-3 bg-base-100 mb-4 rounded px-4 sticky top-0 z-10"
+        class="flex items-center py-4 bg-base-100 mb-6 rounded-lg px-6 sticky top-0 z-10 shadow-md border border-gray-100 dark:border-gray-700"
       >
         <div
           class="text-2xl pr-3 cursor-pointer xl:!hidden"
@@ -352,7 +352,7 @@ function selected(route: any, nav: NavLink) {
       <!-- 👉 Pages -->
       <div style="min-height: calc(100vh - 180px)">
         <RouterView v-slot="{ Component }">
-          <Transition mode="out-in">
+          <Transition mode="out-in" name="fade">
             <Component :is="Component" />
           </Transition>
         </RouterView>
@@ -362,3 +362,15 @@ function selected(route: any, nav: NavLink) {
     </div>
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

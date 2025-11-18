@@ -1,4 +1,4 @@
- {
+{
     "chain_name": "Symphony-Testnet",
     "api": ["https://symphony-testnet-api.hazennetworksolutions.com"],
     "rpc": ["https://symphony-testnet-rpc.hazennetworksolutions.com"],

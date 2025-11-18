@@ -40,45 +40,45 @@ const voterStatusMap: Record<string, string> = {
 const proposalInfo = ref();
 </script>
 <template>
-  <div class="bg-white dark:bg-[#28334e] rounded text-sm">
+  <div class="bg-white dark:bg-[#1F2937] rounded-lg text-sm shadow-md">
     <table class="table-compact w-full table-fixed hidden lg:!table">
       <tbody>
-        <tr v-for="(item, index) in proposals?.proposals" :key="index">
-          <td class="px-4 w-20">
+        <tr v-for="(item, index) in proposals?.proposals" :key="index" class="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 border-b border-gray-100 dark:border-gray-800">
+          <td class="px-4 py-4 w-20">
             <label
               for="proposal-detail-modal"
-              class="text-main text-base hover:text-indigo-400 cursor-pointer"
+              class="text-main text-base hover:text-primary cursor-pointer font-semibold transition-colors duration-200"
               @click="proposalInfo = item"
             >
               #{{ item?.proposal_id }}</label
             >
           </td>
-          <td class="w-full">
+          <td class="w-full py-4">
             <div>
               <RouterLink
                 :to="`/${chain.chainName}/gov/${item?.proposal_id}`"
-                class="text-main text-base mb-1 block hover:text-indigo-400 truncate"
+                class="text-main text-base mb-1 block hover:text-primary truncate font-medium transition-colors duration-200"
               >
                 {{ item?.content?.title || item?.title }}
               </RouterLink>
               <div
                 v-if="item.content"
-                class="bg-[#f6f2ff] text-[#9c6cff] dark:bg-gray-600 dark:text-gray-300 inline-block rounded-full px-2 py-[1px] text-xs mb-1"
+                class="bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400 inline-block rounded-full px-3 py-1 text-xs mb-1 font-medium"
               >
                 {{ showType(item.content['@type']) }}
               </div>
             </div>
           </td>
-          <td class="w-60">
+          <td class="w-60 py-4">
             <ProposalProcess
               :pool="staking.pool"
               :tally="item.final_tally_result"
             ></ProposalProcess>
           </td>
-          <td class="w-36">
+          <td class="w-36 py-4">
             <div class="pl-4">
               <div
-                class="flex items-center"
+                class="flex items-center font-medium"
                 :class="
                   statusMap?.[item?.status] === 'PASSED'
                     ? 'text-yes'
@@ -88,7 +88,7 @@ const proposalInfo = ref();
                 "
               >
                 <div
-                  class="w-1 h-1 rounded-full mr-2"
+                  class="w-2 h-2 rounded-full mr-2"
                   :class="
                     statusMap?.[item?.status] === 'PASSED'
                       ? 'bg-yes'
@@ -102,18 +102,18 @@ const proposalInfo = ref();
                 </div>
               </div>
               <div
-                class="truncate col-span-2 md:!col-span-1 text-xs text-gray-500 dark:text-gray-400 text-right md:!flex md:!justify-start"
+                class="truncate col-span-2 md:!col-span-1 text-xs text-gray-500 dark:text-gray-400 text-right md:!flex md:!justify-start mt-1"
               >
                 {{ format.toDay(item.voting_end_time, 'from') }}
               </div>
             </div>
           </td>
 
-          <td v-if="statusMap?.[item?.status] === 'VOTING'" class="w-40">
+          <td v-if="statusMap?.[item?.status] === 'VOTING'" class="w-40 py-4">
             <div class="">
               <label
                 for="vote"
-                class="btn btn-xs btn-primary rounded-sm"
+                class="btn btn-xs btn-primary rounded-sm hover:scale-105 transition-transform duration-200"
                 @click="
                   dialog.open('vote', {
                     proposal_id: item?.proposal_id,
@@ -132,34 +132,35 @@ const proposalInfo = ref();
       </tbody>
     </table>
 
+    <!-- Mobile view -->
     <div class="lg:!hidden">
       <div
         v-for="(item, index) in proposals?.proposals"
         :key="index"
-        class="px-4 py-4"
+        class="px-4 py-5 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
       >
         <div
-          class="text-main text-base mb-1 flex justify-between hover:text-indigo-400"
+          class="text-main text-base mb-2 flex justify-between hover:text-primary transition-colors duration-200"
         >
           <RouterLink
             :to="`/${chain.chainName}/gov/${item?.proposal_id}`"
-            class="flex-1 w-0 truncate mr-4"
+            class="flex-1 w-0 truncate mr-4 font-medium"
             >{{ item?.content?.title || item?.title }}</RouterLink
           >
           <label
             for="proposal-detail-modal"
-            class="text-main text-base hover:text-indigo-400 cursor-pointer"
+            class="text-main text-base hover:text-primary cursor-pointer font-semibold"
             @click="proposalInfo = item"
           >
             #{{ item?.proposal_id }}</label
           >
         </div>
 
-        <div class="grid grid-cols-4 mt-2 mb-2">
+        <div class="grid grid-cols-4 mt-2 mb-3">
           <div class="col-span-2">
             <div
               v-if="item.content"
-              class="bg-[#f6f2ff] text-[#9c6cff] dark:bg-gray-600 dark:text-gray-300 inline-block rounded-full px-2 py-[1px] text-xs mb-1"
+              class="bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400 inline-block rounded-full px-3 py-1 text-xs mb-1 font-medium"
             >
               {{ showType(item.content['@type']) }}
             </div>
@@ -182,7 +183,7 @@ const proposalInfo = ref();
         <div class="mt-4" v-if="statusMap?.[item?.status] === 'VOTING'">
           <div class="flex justify-between">
             <div
-              class="flex items-center"
+              class="flex items-center font-medium"
               :class="
                 statusMap?.[item?.status] === 'PASSED'
                   ? 'text-yes'
@@ -192,7 +193,7 @@ const proposalInfo = ref();
               "
             >
               <div
-                class="w-1 h-1 rounded-full mr-2"
+                class="w-2 h-2 rounded-full mr-2"
                 :class="
                   statusMap?.[item?.status] === 'PASSED'
                     ? 'bg-yes'
@@ -207,7 +208,7 @@ const proposalInfo = ref();
             </div>
             <label
               for="vote"
-              class="btn btn-xs btn-primary rounded-sm"
+              class="btn btn-xs btn-primary rounded-sm hover:scale-105 transition-transform duration-200"
               @click="
                 dialog.open('vote', {
                   proposal_id: item?.proposal_id,
