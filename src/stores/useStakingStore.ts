@@ -160,3 +160,5 @@ export const useStakingStore = defineStore('stakingStore', {
     },
   },
 });
+
+

@@ -89,7 +89,6 @@ export function isToken(value: string) {
   }
   return is;
 }
-
 export function isStringArray(value: any) {
   let is = false;
   if (Array.isArray(value)) {
@@ -188,34 +187,4 @@ export function rgbToHsl(color: string) {
     s,
     l,
   };
-}
-
-export function truncateString(str: string, startChars: number = 6, endChars: number = 4): string {
-  if (!str || str.length <= startChars + endChars) return str;
-  return `${str.substring(0, startChars)}...${str.substring(str.length - endChars)}`;
-}
-
-export async function copyToClipboard(text: string): Promise<boolean> {
-  try {
-    if (navigator.clipboard && window.isSecureContext) {
-      await navigator.clipboard.writeText(text);
-      return true;
-    } else {
-      // Fallback for older browsers
-      const textArea = document.createElement('textarea');
-      textArea.value = text;
-      textArea.style.position = 'fixed';
-      textArea.style.left = '-999999px';
-      textArea.style.top = '-999999px';
-      document.body.appendChild(textArea);
-      textArea.focus();
-      textArea.select();
-      const result = document.execCommand('copy');
-      textArea.remove();
-      return result;
-    }
-  } catch (err) {
-    console.error('Failed to copy:', err);
-    return false;
-  }
 }

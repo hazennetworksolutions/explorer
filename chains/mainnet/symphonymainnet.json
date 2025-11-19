@@ -1,4 +1,4 @@
-{
+ {
     "chain_name": "Symphony-Mainnet",
     "api": ["https://symphony-mainnet-api.hazennetworksolutions.com"],
     "rpc": ["https://symphony-mainnet-rpc.hazennetworksolutions.com"],
