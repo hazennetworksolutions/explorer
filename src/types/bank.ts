@@ -1,4 +1,3 @@
-
 import type { Coin, PaginatedResponse } from "./common";
 
 export interface BankParams {

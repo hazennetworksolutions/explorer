@@ -32,10 +32,11 @@ function page(p: number) {
 </script>
 <template>
     <div>
-        <div class="tabs tabs-boxed bg-transparent mb-4 text-center">
-            <a class="tab text-gray-400 uppercase" :class="{ 'tab-active': tab === '2' }" @click="changeTab('2')">{{ $t('gov.voting') }}</a>
-            <a class="tab text-gray-400 uppercase" :class="{ 'tab-active': tab === '3' }" @click="changeTab('3')">{{ $t('gov.passed') }}</a>
-            <a class="tab text-gray-400 uppercase" :class="{ 'tab-active': tab === '4' }"
+        <!-- Enhanced tabs with better spacing and hover effects -->
+        <div class="tabs tabs-boxed bg-transparent mb-6 text-center">
+            <a class="tab text-gray-400 uppercase transition-all duration-200 hover:text-primary" :class="{ 'tab-active': tab === '2' }" @click="changeTab('2')">{{ $t('gov.voting') }}</a>
+            <a class="tab text-gray-400 uppercase transition-all duration-200 hover:text-primary" :class="{ 'tab-active': tab === '3' }" @click="changeTab('3')">{{ $t('gov.passed') }}</a>
+            <a class="tab text-gray-400 uppercase transition-all duration-200 hover:text-primary" :class="{ 'tab-active': tab === '4' }"
                 @click="changeTab('4')">{{ $t('gov.rejected') }}</a>
         </div>
         <ProposalListItem :proposals="store?.proposals[tab]" />

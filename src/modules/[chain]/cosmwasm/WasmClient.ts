@@ -116,4 +116,3 @@ export interface WasmRequestRegistry extends AbstractRegistry {
       }, query);
     }
   }
-  

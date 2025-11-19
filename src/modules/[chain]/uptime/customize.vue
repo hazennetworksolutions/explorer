@@ -221,4 +221,3 @@ function color(v: string) {
     <div class="h-6"></div>
   </div>
 </template>
-
