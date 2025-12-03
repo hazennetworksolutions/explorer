@@ -1,0 +1,19 @@
+{
+    "chain_name": "zenrock-testnet",
+    "coingecko": "",
+    "api": ["https://zenrock-testnet-api.hazennetworksolutions.com/"],
+    "rpc": ["https://zenrock-testnet-rpc.hazennetworksolutions.com/"],
+    "snapshot_provider": "",
+    "sdk_version": "v0.50.13",
+    "coin_type": "0",
+    "min_tx_fee": "800",
+    "addr_prefix": "zen",
+    "logo": "/logos/zenrock.png",
+    "assets": [{
+        "base": "urock",
+        "symbol": "ROCK",
+        "exponent": "6",
+        "coingecko_id": "",
+        "logo": "/logos/zenrock.png"
+    }]
+}

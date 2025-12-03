@@ -1,8 +1,8 @@
 {
-    "chain_name": "zenrock",
+    "chain_name": "zenrock-mainnet",
     "coingecko": "",
-    "api": ["https://zenrock-testnet-api.hazennetworksolutions.com/"],
-    "rpc": ["https://zenrock-testnet-rpc.hazennetworksolutions.com/"],
+    "api": ["https://zenrock-mainnet-api.hazennetworksolutions.com/"],
+    "rpc": ["https://zenrock-mainnet-rpc.hazennetworksolutions.com/"],
     "snapshot_provider": "",
     "sdk_version": "v0.50.13",
     "coin_type": "0",
