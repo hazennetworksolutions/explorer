@@ -7,7 +7,7 @@
   "addr_prefix": "mantra",
   "coin_type": 118,
   "min_tx_fee": 200,
-  "logo": "/logos/mantra.png",
+  "logo": "/logos/mantra.jpg",
   "assets": [
     {
       "base": "amantra",
