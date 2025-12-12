@@ -3,7 +3,7 @@
   "chain_id": "mantra-dukong-1",
   "api": ["https://mantra-testnet-api.hazennetworksolutions.com/"],
   "rpc": ["https://mantra-testnet-rpc.hazennetworksolutions.com/"],
-  "sdk_version": "v0.53.4-v7-mantra-2",
+  "sdk_version": "v0.53.4",
   "addr_prefix": "mantra",
   "coin_type": 118,
   "min_tx_fee": 200,
