@@ -6,7 +6,7 @@
     "coin_type": "60",
     "min_tx_fee": "4000",
     "addr_prefix": "rai",
-    "logo": "/logo/republicai.png",
+    "logo": "/logos/republicai.png",
     "keplr_features": [
         "eth-address-gen",
         "eth-key-sign"
@@ -17,7 +17,7 @@
             "symbol": "RAI",
             "exponent": "18",
             "coingecko_id": "",
-            "logo": "/logo/republicai.png"
+            "logo": "/logos/republicai.png"
         }
     ]
 }
