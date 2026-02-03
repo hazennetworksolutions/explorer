@@ -1,0 +1,23 @@
+{
+    "chain_name": "RepublicAI-Testnet",
+    "api": ["https://republicai-testnet-api.hazennetworksolutions.com"],
+    "rpc": ["https://republicai-testnet-rpc.hazennetworksolutions.com"],
+    "sdk_version": "v0.53.5-0.20251030204916-768cb210885c",
+    "coin_type": "60",
+    "min_tx_fee": "4000",
+    "addr_prefix": "rai",
+    "logo": "/logo/republicai.png",
+    "keplr_features": [
+        "eth-address-gen",
+        "eth-key-sign"
+    ],
+    "assets": [
+        {
+            "base": "arai",
+            "symbol": "RAI",
+            "exponent": "18",
+            "coingecko_id": "",
+            "logo": "/logo/republicai.png"
+        }
+    ]
+}
